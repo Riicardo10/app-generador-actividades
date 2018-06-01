@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPricipal"
+    android:background="@color/color_blanco">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_azul_titulo"
+                android:text="@string/sistema_generador_contenidos"
+                android:textColor="@color/color_blanco"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:textSize="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textAlignment="inherit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bienvenido"
+                android:textColor="@color/color_negro"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:textSize="40dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="inherit"
+                android:fontFamily="monospace"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Docente:"
+                android:textColor="@color/color_negro"
+                android:gravity="left"
+                android:layout_marginTop="0dp"
+                android:textSize="14dp"
+                android:layout_marginBottom="0dp"
+                android:textAlignment="inherit"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_nombre_docente_MEN_PRI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mauricio Cordova Portillo"
+                android:textColor="@color/color_negro"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginBottom="15dp"
+                android:textAlignment="inherit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escuela:"
+                android:textColor="@color/color_negro"
+                android:gravity="left"
+                android:layout_marginTop="0dp"
+                android:textSize="14dp"
+                android:layout_marginBottom="0dp"
+                android:textAlignment="inherit"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_nombre_escuela_MEN_PRI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_blanco"
+                android:text="Instituto Tecnologico de Chilpancingo"
+                android:textColor="@color/color_negro"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="inherit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_principal_descripcion"
+                android:textColor="@color/color_negro"
+                android:gravity="left"
+                android:layout_marginTop="0dp"
+                android:textSize="11dp"
+                android:layout_marginBottom="0dp"
+                android:textAlignment="inherit"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_menu_usuario_MEN_PRI"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/menu"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_conacyt"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_uagro"
+                    android:layout_marginRight="30dp"/>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img_miidt" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroAlumnos"
+    android:background="@color/color_morado_background_inicio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:paddingTop="30dp"
+                android:id="@+id/activity_regalu_img"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/img_inicio" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_alumnos"
+                android:textColor="@color/color_blanco"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif-monospace"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_matricula_REG_ALU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/matricula"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_nombre_REG_ALU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/nombre_docente"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textCapWords" />
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_apellidos_REG_ALU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/apellidos_docente"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textCapWords"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_edad_REG_ALU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/edad"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_serial_REG_ALU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/serial"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_registrar_REG_ALU"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/registrar"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_lista_alumnos_REG_ALU"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/lista_alumnos"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_menu_principal_REG_ALU"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_azul_primary"
+                android:text="@string/menu_principal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

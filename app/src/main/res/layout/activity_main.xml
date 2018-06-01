@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/color_morado_background_inicio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:paddingTop="30dp"
+            android:id="@+id/activity_main_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/img_inicio" />
+
+        <EditText
+            android:background="@color/color_blanco"
+            android:id="@+id/txt_email_MAIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="mauricio@gmai"
+            android:hint="@string/email"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:background="@color/color_blanco"
+            android:id="@+id/txt_contrasenia_MAIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="1234"
+            android:hint="@string/contrasenia"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:inputType="text"/>
+
+        <Button
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:id="@+id/btt_iniciar_MAIN"
+            android:textColor="@color/color_blanco"
+            android:background="@color/color_verde_1"
+            android:text="@string/iniciar"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_blanco"
+                android:text="@string/no_tienes_cuenta"
+                android:layout_marginTop="13dp"/>
+
+            <android.support.v4.widget.Space
+                android:layout_height="0dp"
+                android:layout_width="15dp" />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/btt_crear_cuenta_MAIN"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_morado_background_inicio"
+                android:text="@string/crear_cuenta"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
