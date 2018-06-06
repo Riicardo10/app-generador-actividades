@@ -27,7 +27,8 @@
         <activity android:name=".RegistroTags" />
         <activity android:name=".ListaTags" />
         <activity android:name=".ActualizarTag" />
-        <activity android:name=".RegistroActividades"></activity>
+        <activity android:name=".RegistroActividades" />
+        <activity android:name=".ListaActividades"></activity>
     </application>
 
 </manifest>

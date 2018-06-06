@@ -18,6 +18,7 @@ public class HelperDB extends SQLiteOpenHelper {
         db.execSQL( EstructuraDB.SQL_CREAR_TABLA_DOCENTES );
         db.execSQL( EstructuraDB.SQL_CREAR_TABLA_ALUMNOS );
         db.execSQL( EstructuraDB.SQL_CREAR_TABLA_TAGS );
+        db.execSQL( EstructuraDB.SQL_CREAR_TABLA_ACTIVIDADES );
     }
 
     @Override
@@ -25,6 +26,7 @@ public class HelperDB extends SQLiteOpenHelper {
         db.execSQL( EstructuraDB.SQL_ELIMINAR_TABLA_DOCENTES );
         db.execSQL( EstructuraDB.SQL_ELIMINAR_TABLA_ALUMNOS );
         db.execSQL( EstructuraDB.SQL_ELIMINAR_TABLA_TAGS );
+        db.execSQL( EstructuraDB.SQL_ELIMINAR_TABLA_ACTIVIDADES );
         onCreate( db );
     }
 }

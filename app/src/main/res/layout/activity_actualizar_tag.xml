@@ -36,6 +36,7 @@
                 android:id="@+id/txt_id_ACT_TAG"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:enabled="false"
                 android:ems="10"
                 android:text=""
                 android:hint="@string/id"

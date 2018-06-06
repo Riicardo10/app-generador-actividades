@@ -49,7 +49,7 @@ public class RegistroDocente extends AppCompatActivity implements OnClickListene
                 guardarDocente();
                 break;
             case R.id.btt_menu_principal_REG_DOC:
-                startActivity( new Intent(getApplicationContext(), MenuUsuario.class) );
+                startActivity( new Intent(getApplicationContext(), MainActivity.class) );
                 break;
             case R.id.btt_lista_docentes_REG_DOC:
                 startActivity( new Intent(getApplicationContext(), ListaDocentes.class) );

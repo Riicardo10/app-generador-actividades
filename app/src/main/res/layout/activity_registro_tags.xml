@@ -32,19 +32,6 @@
                 android:fontFamily="serif-monospace"
                 android:textSize="20dp"/>
 
-            <EditText
-                android:background="@color/color_blanco"
-                android:id="@+id/txt_id_REG_TAG"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/id"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"
-                android:inputType="text"/>
 
             <EditText
                 android:background="@color/color_blanco"
@@ -58,7 +45,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords" />
+                android:inputType="text" />
 
             <EditText
                 android:background="@color/color_blanco"

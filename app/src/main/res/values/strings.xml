@@ -26,6 +26,10 @@
     <string name="actualizar_docente">Actualizacion de docente</string>
     <string name="actualizar_tag">Actualizacion de tags</string>
     <string name="menu_principal">Menu principal</string>
+    <string name="ver_actividades">Ver actividades</string>
+    <string name="lista_actividades">Lista de actividades</string>
+    <string name="registrar_actividad">Registrar actividad</string>
+    <string name="agregar_tag">Agregar tag</string>
     <string name="registro_alumnos">REGISTRO DE ALUMNOS</string>
     <string name="registro_tags">REGISTRO DE TAGS</string>
     <string name="registro_actividades">REGISTRO DE ACTIVIDADES</string>
@@ -39,6 +43,7 @@
     <string name="registro_de">Registro de:</string>
     <string name="alumnos">Alumnos</string>
     <string name="menu">Menu</string>
+    <string name="salir">Salir</string>
     <string name="tags">Tags</string>
     <string name="actividad">Actividad</string>
     <string name="bienvenido">BIENVENIDO</string>

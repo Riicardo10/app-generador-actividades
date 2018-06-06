@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroActividades"
-    android:background="@color/color_morado_background_inicio">
+    tools:context=".RegistroActividades">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,6 +26,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/registro_actividades"
                 android:textColor="@color/color_blanco"
+                android:background="@color/color_azul_titulo"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 android:gravity="center"
                 android:layout_marginTop="5dp"
                 android:fontFamily="serif-monospace"
@@ -39,12 +41,12 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text=""
+                android:inputType="text|textCapWords"
                 android:hint="@string/nombre_actividad"
                 android:gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginLeft="40dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -87,14 +89,70 @@
             <Button
                 android:layout_height="40dp"
                 android:layout_width="match_parent"
+                android:id="@+id/btt_agregar_tag_REG_ACT"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/agregar_tag"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/lista_tags_2_REG_ACT"
+                    android:background="@color/OldLace"
+                    android:fontFamily="serif-monospace"> </ListView>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_agregar_actividad_REG_ACT"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/registrar_actividad"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_lista_actividades_REG_ACT"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_azul_primary"
+                android:text="@string/ver_actividades"
+                android:layout_gravity="center"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
                 android:id="@+id/btt_menu_principal_REG_ACT"
                 android:textColor="@color/color_blanco"
                 android:background="@color/color_azul_primary"
                 android:text="@string/menu_principal"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp" />
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="30dp"/>
 
         </LinearLayout>
 

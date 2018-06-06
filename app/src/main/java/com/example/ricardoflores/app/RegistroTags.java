@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class RegistroTags extends AppCompatActivity {
 
-    EditText txt_id, txt_serial, txt_nombre_objeto;
+    EditText txt_serial, txt_nombre_objeto;
     Button btt_registrar, btt_lista, btt_menu;
 
     @Override
@@ -21,7 +21,7 @@ public class RegistroTags extends AppCompatActivity {
         setContentView(R.layout.activity_registro_tags);
         final HelperDB helper = new HelperDB(this);
 
-        txt_id = (EditText)findViewById(R.id.txt_id_REG_TAG);
+        //txt_id = (EditText)findViewById(R.id.txt_id_REG_TAG);
         txt_serial = (EditText)findViewById(R.id.txt_serial_REG_TAG);
         txt_nombre_objeto = (EditText)findViewById(R.id.txt_tag_REG_TAG);
 
@@ -29,20 +29,20 @@ public class RegistroTags extends AppCompatActivity {
         btt_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String id = txt_id.getText().toString();
+                //String id = txt_id.getText().toString();
                 String serial = txt_serial.getText().toString();
                 String nombre_objeto = txt_nombre_objeto.getText().toString();
 
-                if(camposLlenos(new String[]{ id, serial, nombre_objeto })){
+                if(camposLlenos(new String[]{ serial, nombre_objeto })){
                     SQLiteDatabase db = helper.getWritableDatabase();
                     if(db != null){
                         ContentValues values = new ContentValues();
-                        values.put( EstructuraDB.CAMPO_1_TAGS_ID, id);
+                        //values.put( EstructuraDB.CAMPO_1_TAGS_ID, id);
                         values.put( EstructuraDB.CAMPO_2_TAGS_SERIAL, serial);
                         values.put( EstructuraDB.CAMPO_3_TAGS_NOMBRE_OBJETO, nombre_objeto);
                         long i = db.insert( EstructuraDB.TABLA_TAGS, null, values );
                         Toast.makeText(getApplicationContext(), "Registro guardado", Toast.LENGTH_LONG).show();
-                        txt_id.setText("");
+                        //txt_id.setText("");
                         txt_serial.setText("");
                         txt_nombre_objeto.setText("");
                     }

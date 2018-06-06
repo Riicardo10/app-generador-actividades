@@ -49,11 +49,22 @@ public class EstructuraDB {
     public static final String CAMPO_2_TAGS_SERIAL = "serial";
     public static final String CAMPO_3_TAGS_NOMBRE_OBJETO = "nombre_objeto";
     public static final String SQL_CREAR_TABLA_TAGS =
-            "CREATE TABLE " + EstructuraDB.TABLA_TAGS+ " ("  +
-                    EstructuraDB.CAMPO_1_TAGS_ID + " TEXT PRIMARY KEY, " +
+            "CREATE TABLE " + EstructuraDB.TABLA_TAGS + " ("  +
+                    //EstructuraDB.CAMPO_1_TAGS_ID + " TEXT PRIMARY KEY, " +
+                    EstructuraDB.CAMPO_1_TAGS_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     EstructuraDB.CAMPO_2_TAGS_SERIAL + " TEXT, " +
                     EstructuraDB.CAMPO_3_TAGS_NOMBRE_OBJETO + " TEXT)";
     public static final String SQL_ELIMINAR_TABLA_TAGS = "DROP TABLE IF EXISTS " + EstructuraDB.TABLA_TAGS;
+    // estructura ACTIVIDADES
+    public static final String TABLA_ACTIVIDADES = "actividades";
+    public static final String CAMPO_1_ACTIVIDADES_NOMBRE = "nombre";
+    public static final String CAMPO_2_ACTIVIDADES_MOMENTO = "momento";
+    public static final String CAMPO_3_ACTIVIDADES_TAG = "tag";
+    public static final String SQL_CREAR_TABLA_ACTIVIDADES =
+            "CREATE TABLE " + EstructuraDB.TABLA_ACTIVIDADES + " ("  +
+                    EstructuraDB.CAMPO_1_ACTIVIDADES_NOMBRE + " TEXT, " +
+                    EstructuraDB.CAMPO_2_ACTIVIDADES_MOMENTO + " TEXT, " +
+                    EstructuraDB.CAMPO_3_ACTIVIDADES_TAG + " TEXT)";
 
-
+    public static final String SQL_ELIMINAR_TABLA_ACTIVIDADES = "DROP TABLE IF EXISTS " + EstructuraDB.TABLA_ACTIVIDADES;
 }

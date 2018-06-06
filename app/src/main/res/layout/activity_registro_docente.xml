@@ -189,7 +189,7 @@
                 android:id="@+id/btt_menu_principal_REG_DOC"
                 android:textColor="@color/color_blanco"
                 android:background="@color/color_azul_primary"
-                android:text="@string/menu"
+                android:text="@string/salir"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="40dp"
