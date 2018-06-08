@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroDocente"
+    android:background="@color/color_morado_background_inicio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:paddingTop="30dp"
+                android:id="@+id/activity_regdoc_img"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/img_inicio" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_docentes"
+                android:textColor="@color/color_blanco"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif-monospace"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_nombre_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/nombre_docente"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textCapWords"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_apellidos_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/apellidos_docente"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textCapWords"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_email_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/email"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_contrasenia_1_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/contrasenia_1"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textPassword"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_contrasenia_2_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/contrasenia_2"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textPassword"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_cct_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/cct"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_nombre_escuela_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/nombre_escuela"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textCapWords"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_grado_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/grado"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:background="@color/color_blanco"
+                android:id="@+id/txt_grupo_REGDOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="@string/grupo"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="text|textCapWords"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_registrar_REG_DOC"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/registrar"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_lista_docentes_REG_DOC"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_verde_1"
+                android:text="@string/lista_docentes"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/btt_menu_principal_REG_DOC"
+                android:textColor="@color/color_blanco"
+                android:background="@color/color_azul_primary"
+                android:text="@string/salir"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
