@@ -20,39 +20,37 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:paddingTop="30dp"
                 android:id="@+id/activity_main_img"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:src="@drawable/img_inicio" />
+                android:paddingTop="30dp"
+                android:src="@drawable/login_sisteval" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_email_MAIN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="mauricio@gmai"
-                android:hint="@string/email"
-                android:gravity="center"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="text" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_contrasenia_MAIN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="1234"
-                android:hint="@string/contrasenia"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/contrasenia"
+                android:inputType="text" />
 
             <Button
                 android:layout_height="40dp"
