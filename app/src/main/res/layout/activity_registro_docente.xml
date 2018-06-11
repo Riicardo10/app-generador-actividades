@@ -14,187 +14,188 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/LightCyan"
             android:orientation="vertical">
 
             <ImageView
-                android:paddingTop="30dp"
                 android:id="@+id/activity_regdoc_img"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
+                android:paddingTop="30dp"
                 android:src="@drawable/img_inicio" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/registro_docentes"
-                android:textColor="@color/color_blanco"
-                android:gravity="center"
                 android:layout_marginTop="5dp"
-                android:fontFamily="serif-monospace"
-                android:textSize="20dp"/>
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/registro_docentes"
+                android:textColor="?android:attr/textColorPrimaryNoDisable"
+                android:textSize="20dp" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_nombre_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/nombre_docente"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/nombre_docente"
+                android:inputType="text|textCapWords"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_apellidos_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/apellidos_docente"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/apellidos_docente"
+                android:inputType="text|textCapWords"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_email_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/email"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_contrasenia_1_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/contrasenia_1"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textPassword"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/contrasenia_1"
+                android:inputType="text|textPassword"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_contrasenia_2_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/contrasenia_2"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textPassword"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/contrasenia_2"
+                android:inputType="text|textPassword"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_cct_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/cct"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/cct"
+                android:inputType="text"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_nombre_escuela_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/nombre_escuela"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/nombre_escuela"
+                android:inputType="text|textCapWords"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_grado_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/grado"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="number"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/grado"
+                android:inputType="number"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_grupo_REGDOC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/grupo"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/grupo"
+                android:inputType="text|textCapWords"
+                android:text="" />
 
             <Button
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
                 android:id="@+id/btt_registrar_REG_DOC"
-                android:textColor="@color/color_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/color_verde_1"
                 android:text="@string/registrar"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"/>
+                android:textColor="@color/color_blanco" />
 
             <Button
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
                 android:id="@+id/btt_lista_docentes_REG_DOC"
-                android:textColor="@color/color_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/color_verde_1"
                 android:text="@string/lista_docentes"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"/>
+                android:textColor="@color/color_blanco" />
 
             <Button
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
                 android:id="@+id/btt_menu_principal_REG_DOC"
-                android:textColor="@color/color_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/color_azul_primary"
                 android:text="@string/salir"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginBottom="30dp"/>
+                android:textColor="@color/color_blanco" />
         </LinearLayout>
 
     </ScrollView>
