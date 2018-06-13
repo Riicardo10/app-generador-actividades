@@ -9,7 +9,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:background="@color/LightCyan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,127 +22,127 @@
             android:orientation="vertical">
 
             <ImageView
-                android:paddingTop="30dp"
                 android:id="@+id/activity_regalu_img"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:src="@drawable/img_inicio" />
+                android:layout_height="100dp"
+                android:paddingTop="30dp"
+                android:src="@drawable/login_sisteval" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/registro_alumnos"
-                android:textColor="@color/color_blanco"
-                android:gravity="center"
                 android:layout_marginTop="5dp"
-                android:fontFamily="serif-monospace"
-                android:textSize="20dp"/>
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/registro_alumnos"
+                android:textColor="?android:attr/textColorPrimaryNoDisable"
+                android:textSize="20dp" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_matricula_REG_ALU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/matricula"
-                android:gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/matricula"
+                android:inputType="text"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_nombre_REG_ALU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/nombre_docente"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords" />
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/nombre_docente"
+                android:inputType="text|textCapWords"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_apellidos_REG_ALU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/apellidos_docente"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text|textCapWords"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/apellidos_docente"
+                android:inputType="text|textCapWords"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_edad_REG_ALU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/edad"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="number"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/edad"
+                android:inputType="number"
+                android:text="" />
 
             <EditText
-                android:background="@color/color_blanco"
                 android:id="@+id/txt_serial_REG_ALU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:text=""
-                android:hint="@string/serial"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="40dp"
                 android:layout_marginLeft="40dp"
-                android:inputType="text"/>
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_blanco"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/serial"
+                android:inputType="text"
+                android:text="" />
 
             <Button
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
                 android:id="@+id/btt_registrar_REG_ALU"
-                android:textColor="@color/color_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/color_verde_1"
                 android:text="@string/registrar"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"/>
+                android:textColor="@color/color_blanco" />
 
             <Button
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
                 android:id="@+id/btt_lista_alumnos_REG_ALU"
-                android:textColor="@color/color_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/color_verde_1"
                 android:text="@string/lista_alumnos"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"/>
+                android:textColor="@color/color_blanco" />
 
             <Button
-                android:layout_height="40dp"
-                android:layout_width="match_parent"
                 android:id="@+id/btt_menu_principal_REG_ALU"
-                android:textColor="@color/color_blanco"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="15dp"
                 android:background="@color/color_azul_primary"
                 android:text="@string/menu_principal"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="40dp"/>
+                android:textColor="@color/color_blanco" />
         </LinearLayout>
 
     </ScrollView>

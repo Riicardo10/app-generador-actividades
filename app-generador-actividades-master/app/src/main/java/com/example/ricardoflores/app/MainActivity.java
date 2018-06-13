@@ -11,14 +11,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btt_iniciar, btt_crear_cuenta;
+    Button btt_iniciar;
     EditText txt_email, txt_contrasenia;
+    TextView btt_crear_cuenta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         txt_email = (EditText)findViewById(R.id.txt_email_MAIN);
         txt_contrasenia = (EditText)findViewById(R.id.txt_contrasenia_MAIN);
         btt_iniciar = (Button)findViewById(R.id.btt_iniciar_MAIN);
-        btt_crear_cuenta = (Button)findViewById(R.id.btt_crear_cuenta_MAIN);
+        btt_crear_cuenta = (TextView) findViewById(R.id.btt_crear_cuenta_MAIN);
 
         final HelperDB helper = new HelperDB(this);
 
