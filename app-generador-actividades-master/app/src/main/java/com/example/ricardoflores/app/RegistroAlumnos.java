@@ -88,6 +88,3 @@ public class RegistroAlumnos extends AppCompatActivity {
         return true;
     }
 }
-
-
-//Toast.makeText(this, matricula + " " + nombre + " " + apellidos + " " + edad + " " + serial, Toast.LENGTH_SHORT).show();
